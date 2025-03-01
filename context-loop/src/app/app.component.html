@@ -1,0 +1,27 @@
+<router-outlet />
+<h1 class="title">{{ title }}</h1>
+
+@for(user of users;track user;let i=$index){
+<div class="cont">
+  @if($first){
+  <h1 style="width: 20%; background-color: burlywood">
+    {{ i + 1 }} : {{ user }}
+  </h1>
+  } @else if($last){
+  <h1 style="width: 20%; background-color: rgb(192, 135, 60)">
+    {{ i + 1 }} : {{ user }}
+  </h1>
+  }@else{ @if($even){
+  <h1 style="width: 20%; background-color: rgb(71, 47, 16)">
+    {{ i + 1 }} : {{ user }}
+  </h1>
+  }@else if($odd){
+  <h1 style="width: 20%; background-color: rgb(148, 146, 144)">
+    {{ i + 1 }} : {{ user }}
+  </h1>
+  } }
+</div>
+<!-- <h1>{{ $count }}</h1> -->
+} @empty(){
+<h1>No Contents</h1>
+}
