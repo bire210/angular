@@ -1,0 +1,65 @@
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background-color: darkgrey;
+}
+
+.center {
+    display: grid;
+    place-items: center;  /* Centers both horizontally and vertically */
+    height: 80px;
+    background-color: darkgrey;
+  }
+
+  .taskInput{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .taskInput input {
+    height: 40px;
+    border-radius: 8px; 
+    padding: 8px;
+    border: 2px solid #ccc; 
+    outline: none;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.taskInput input:focus {
+    border-color: #ced7e2; 
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.5); 
+}
+
+.taskInput button{
+    cursor: pointer;
+    border-radius: 8px; 
+    border: 2px solid #ccc; 
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.todos {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 10px 5px;
+}
+
+.todos span, button{
+    height: 40px;
+    border-radius: 8px; 
+    display: block;
+    padding: 8px;
+    width: 100px;
+    border: 2px solid #ccc; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+button{
+    cursor: pointer;
+}
