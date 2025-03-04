@@ -1,0 +1,7 @@
+.title{
+    width: 100%;
+    display: grid;
+    height: 60px;
+    place-items: center;
+    background-color: cadetblue;
+}
