@@ -5,3 +5,20 @@
     place-items: center;
     background-color: cadetblue;
 }
+
+.directive{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    justify-content: space-around;
+    margin: 20px auto;
+    height: 45px;
+    background-color: aquamarine;
+}
+
+.item{
+    width: 20%;
+    display: grid;
+    place-items: center;
+}

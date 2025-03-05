@@ -41,17 +41,24 @@ export class AppComponent {
     { name: 'Priya Verma', age: 19, city: 'Kolkata', mobile: '7654321098' },
     { name: 'Neha Singh', age: 22, city: 'Bangalore', mobile: '6543210987' },
     { name: 'Vikas Yadav', age: 20, city: 'Hyderabad', mobile: '5432109876' },
-    { name: 'Suman Gupta', age: 21, city: 'Chennai', mobile: '4321098765' },
-    { name: 'Anjali Mehta', age: 23, city: 'Pune', mobile: '3210987654' },
-    { name: 'Rahul Chauhan', age: 20, city: 'Ahmedabad', mobile: '2109876543' },
-    { name: 'Kiran Das', age: 22, city: 'Jaipur', mobile: '1098765432' },
-    { name: 'Pooja Rani', age: 19, city: 'Lucknow', mobile: '9988776655' },
-    { name: 'Suresh Patel', age: 24, city: 'Bhopal', mobile: '8877665544' },
-    { name: 'Deepak Joshi', age: 21, city: 'Chandigarh', mobile: '7766554433' },
-    { name: 'Manish Thakur', age: 23, city: 'Indore', mobile: '6655443322' },
-    { name: 'Sunita Mishra', age: 20, city: 'Patna', mobile: '5544332211' },
-    { name: 'Rajesh Pandey', age: 22, city: 'Ranchi', mobile: '4433221100' },
+    // { name: 'Suman Gupta', age: 21, city: 'Chennai', mobile: '4321098765' },
+    // { name: 'Anjali Mehta', age: 23, city: 'Pune', mobile: '3210987654' },
+    // { name: 'Rahul Chauhan', age: 20, city: 'Ahmedabad', mobile: '2109876543' },
+    // { name: 'Kiran Das', age: 22, city: 'Jaipur', mobile: '1098765432' },
+    // { name: 'Pooja Rani', age: 19, city: 'Lucknow', mobile: '9988776655' },
+    // { name: 'Suresh Patel', age: 24, city: 'Bhopal', mobile: '8877665544' },
+    // { name: 'Deepak Joshi', age: 21, city: 'Chandigarh', mobile: '7766554433' },
+    // { name: 'Manish Thakur', age: 23, city: 'Indore', mobile: '6655443322' },
+    // { name: 'Sunita Mishra', age: 20, city: 'Patna', mobile: '5544332211' },
+    // { name: 'Rajesh Pandey', age: 22, city: 'Ranchi', mobile: '4433221100' },
   ];
+
+  title2: string = '*ngIf directive in angular';
+  x = 5;
+
+  login: boolean = false;
+
+  block: number = 0;
 }
 
 /*

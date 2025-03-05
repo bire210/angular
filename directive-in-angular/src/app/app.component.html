@@ -1,9 +1,23 @@
 <h1 *ngIf="show" class="title">{{ title }}</h1>
 
 <div>
-  <div *ngFor="let x of studentDetails">
-    <ul>
-      <li>{{ x.name }}</li>
+  <div *ngFor="let student of studentDetails">
+    <ul class="directive">
+      <li class="item">{{ student.name }}</li>
+      <li class="item">{{ student.age }}</li>
+      <li class="item">{{ student.city }}</li>
+      <li class="item">{{ student.mobile }}</li>
     </ul>
   </div>
 </div>
+<hr />
+
+<h1 class="title">{{ title2 }}</h1>
+
+<h1 *ngIf="x == 5">learning ngIf</h1>
+
+<div *ngIf="login; else elseBlock">
+  <button>Logout</button>
+</div>
+
+<ng-template #elseBlock> <button>login</button> </ng-template>
