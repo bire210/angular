@@ -58,7 +58,14 @@ export class AppComponent {
 
   login: boolean = false;
 
-  block: number = 0;
+  loginLogout() {
+    this.login = !this.login;
+  }
+
+  block: number = 1;
+  increamentBlock() {
+    this.block = this.block + 1;
+  }
 }
 
 /*

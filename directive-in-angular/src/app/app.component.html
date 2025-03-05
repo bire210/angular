@@ -14,10 +14,31 @@
 
 <h1 class="title">{{ title2 }}</h1>
 
-<h1 *ngIf="x == 5">learning ngIf</h1>
+<h1 *ngIf="x == 5">learning *ngIf</h1>
 
 <div *ngIf="login; else elseBlock">
-  <button>Logout</button>
+  <button (click)="loginLogout()">Logout</button>
 </div>
 
-<ng-template #elseBlock> <button>login</button> </ng-template>
+<ng-template #elseBlock>
+  <button (click)="loginLogout()">login</button>
+</ng-template>
+
+<div *ngIf="block == 1; else elseBlock1">
+  <h1>Heading 1......</h1>
+</div>
+<ng-template #elseBlock1>
+  <div *ngIf="block == 2; else elseBlock2">
+    <h1>Heading 2......</h1>
+  </div>
+</ng-template>
+<ng-template #elseBlock2>
+  <div *ngIf="block == 3; else elseBlock3">
+    <h1>Heading 3......</h1>
+  </div>
+</ng-template>
+<ng-template #elseBlock3>
+  <h1>Else heading ....</h1>
+</ng-template>
+
+<button (click)="increamentBlock()">Change the block</button>
