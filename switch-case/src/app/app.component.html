@@ -1,0 +1,20 @@
+<h1 class="title">
+  {{ title }}
+</h1>
+
+<div>
+  <button (click)="changeColor('red')">red</button>
+  <button (click)="changeColor('green')">green</button>
+  <button (click)="changeColor('yellow')">yellow</button>
+  <button (click)="changeColor('blue')">blue</button>
+  <button (click)="changeColor('other')">other</button>
+</div>
+<div [ngSwitch]="color">
+  <h1 *ngSwitchCase="'red'" style="background-color: red">Red Color</h1>
+  <h1 *ngSwitchCase="'green'" style="background-color: green">Green Color</h1>
+  <h1 *ngSwitchCase="'yellow'" style="background-color: yellow">
+    Yellow Color
+  </h1>
+  <h1 *ngSwitchCase="'blue'" style="background-color: blue">Blue Color</h1>
+  <h1 *ngSwitchDefault style="background-color: pink">Pink Color</h1>
+</div>
