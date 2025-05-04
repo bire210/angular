@@ -1,0 +1,21 @@
+<p>Home Page!</p>
+
+<div class="profile">
+
+    <!-- <a routerLink="/profile" class="home-button">Profile</a> -->
+
+    <!-- to passs props during routes -->
+    <!-- Option 1: Route with path params (if using :name in the route) -->
+    <!-- <a [routerLink]="['/profile', 'Birendra Matho']" class="profile-button">Pass profile data by params</a> -->
+    <a [routerLink]="['/profile', {name:'Birendra Matho'}]" class="profile-button">Pass profile data by params</a>
+
+    <!-- Option 2: Route with query params (if name is a query parameter) -->
+
+    <a [routerLink]="['/profile']" [queryParams]="{ name: 'Birendra Matho' }" class="profile-button">Profile data Pass
+        By query</a>
+
+    <button (click)="goToProfile('Birendra')">
+        Goto Profile For Button click
+    </button>
+
+</div>

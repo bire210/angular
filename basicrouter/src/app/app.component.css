@@ -1,0 +1,12 @@
+.content {
+    display: grid;
+    height: 100px;
+    width: 100%;
+    place-items: center;
+}
+
+.content h1 {
+    padding: 10px;
+    border: none;
+
+}

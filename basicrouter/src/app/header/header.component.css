@@ -1,0 +1,73 @@
+.nav {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    height: 60px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    margin: 1px auto;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.logo li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: color 0.3s, border-bottom 0.3s;
+    padding: 5px 0;
+    position: relative;
+}
+
+.headers {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.headers li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: color 0.3s, border-bottom 0.3s;
+    padding: 5px 0;
+    position: relative;
+    padding: 10px 15px;
+}
+
+.headers li a:hover {
+    color: #007BFF;
+}
+
+.headers li a::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: #007BFF;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.headers li a:hover::after {
+    width: 100%;
+}
+
+.active {
+    background-color: blueviolet;
+    color: aliceblue;
+}
